@@ -1,5 +1,5 @@
 var assert = require('assert');
-var memoize = require('./');
+var memoize = require('./index');
 
 describe('memoize', function() {
 
