@@ -1,5 +1,5 @@
 var assert = require('assert');
-var debounce = require('./');
+var debounce = require('./index');
 
 describe('debounce', function() {
   it('waits for the threshold to pass before executing', function(done) {
@@ -37,7 +37,7 @@ describe('debounce', function() {
     setTimeout(function() {
       assert.equal(called, 2);
       done();
-    }, 35);
+    }, 45);
   });
 
   it('gets called with context', function(done) {
